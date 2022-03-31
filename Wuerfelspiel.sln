@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wuerfelspiel", "Wuerfelspiel\Wuerfelspiel.csproj", "{45D82629-1820-4629-9B7C-4114A43008F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WuerfelspielTests", "WuerfelspielTests\WuerfelspielTests.csproj", "{F3546280-41C1-495E-B58D-429DAFF06215}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45D82629-1820-4629-9B7C-4114A43008F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D82629-1820-4629-9B7C-4114A43008F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D82629-1820-4629-9B7C-4114A43008F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D82629-1820-4629-9B7C-4114A43008F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3546280-41C1-495E-B58D-429DAFF06215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3546280-41C1-495E-B58D-429DAFF06215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3546280-41C1-495E-B58D-429DAFF06215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3546280-41C1-495E-B58D-429DAFF06215}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C87F98B4-8552-4759-B0FA-0543D716D1B4}
+	EndGlobalSection
+EndGlobal
