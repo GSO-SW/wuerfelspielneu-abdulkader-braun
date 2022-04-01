@@ -11,15 +11,16 @@ namespace WuerfelspielTests
         public void Wuerfel_wuerfelnkonstrucktorleer()
         {
             //Arrange
-            int seitenzahlpruefen = 6;
-            bool gesichert = false;
-            Wuerfel expectedwuerfel = new Wuerfel();
+            int seitenzahl = 6;
+
             //Act
             Wuerfel wuerfel = new Wuerfel();
+
             //Assert
-            Assert.AreEqual(expectedwuerfel, wuerfel);
+            Assert.AreEqual(seitenzahl, wuerfel.AnzahlSeiten);
+            Assert.IsFalse(wuerfel.Gesichert);
 
         }
- 
+
     }
 }
