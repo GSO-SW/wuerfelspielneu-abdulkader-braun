@@ -12,15 +12,18 @@ namespace WuerfelspielTests
         {
             //Arrange
             int seitenzahl = 6;
-
+            int Letztesergebniss = 0;
             //Act
             Wuerfel wuerfel = new Wuerfel();
 
             //Assert
             Assert.AreEqual(seitenzahl, wuerfel.AnzahlSeiten);
             Assert.IsFalse(wuerfel.Gesichert);
+            Assert.AreEqual(Letztesergebniss, wuerfel.LetztesErgebniss);
 
         }
+
+
 
     }
 }
