@@ -32,5 +32,16 @@ namespace WuerfelspielTests
             // Assert
             Assert.AreEqual(b.Wuerfel.Length, anzahlWuerfel);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        private void Becher_Keine_0_Wuerfel()
+        {
+            // Arrange
+            int anzahlWuerfel = 0;
+
+            // Act
+            Becher b = new Becher(anzahlWuerfel);
+        }
     }
 }
