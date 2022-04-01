@@ -43,5 +43,17 @@ namespace WuerfelspielTests
             // Act
             Becher b = new Becher(anzahlWuerfel);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException))]
+        private void SicherungUmschalten_Wuerfel_Nicht_Verhanden()
+        {
+            // Arrange
+            int anzahlWuerfel = 5;
+            Becher b = new Becher(anzahlWuerfel);
+
+            // Act
+            b.WuerfelSicherungUmschalten(6);
+        }
     }
 }
