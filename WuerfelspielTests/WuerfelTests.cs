@@ -23,6 +23,24 @@ namespace WuerfelspielTests
 
         }
 
+        [TestMethod]
+        public void Wuerfel_wuerfelkostrukotnictLeer()
+        {
+            //Arrange
+            int seitenzahl = 8;
+            int Letztesergebniss = 0;
+            //Act
+            Wuerfel wuerfel = new Wuerfel(seitenzahl);
+            wuerfel.gesichert = true;
+
+            //Assert
+            Assert.AreEqual(seitenzahl, wuerfel.AnzahlSeiten);
+            Assert.IsTrue(wuerfel.Gesichert);
+            Assert.AreEqual(Letztesergebniss, wuerfel.LetztesErgebniss);
+
+
+        }
+
 
 
     }
