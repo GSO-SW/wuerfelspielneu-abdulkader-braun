@@ -55,5 +55,20 @@ namespace WuerfelspielTests
             // Act
             b.WuerfelSicherungUmschalten(6);
         }
+
+        [TestMethod]
+        public void WuerfelSicherungUmschalten_Wuerfel_Umgeschaltet()
+        {
+            // Arrange 
+            int anzahlWuerfel = 5;
+            Becher b = new Becher(anzahlWuerfel);
+            bool wuerfelIstGeschichert = b.Wuerfel[3].Gesichert;
+
+            // Act
+            b.WuerfelSicherungUmschalten(3);
+
+            // Assert
+            Assert.AreNotEqual(b.Wuerfel[3].Gesichert, wuerfelIstGeschichert);
+        }
     }
 }
