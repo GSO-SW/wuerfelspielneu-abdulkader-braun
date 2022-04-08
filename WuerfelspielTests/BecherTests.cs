@@ -17,7 +17,7 @@ namespace WuerfelspielTests
             Becher b = new Becher(anzahlWuerfel);
 
             //Assert
-            Assert.IsInstanceOfType(b, Becher);
+            Assert.IsInstanceOfType(b, typeof(Becher));
         }
 
         [TestMethod]
@@ -30,7 +30,7 @@ namespace WuerfelspielTests
             Becher b = new Becher(anzahlWuerfel);
 
             // Assert
-            Assert.AreEqual(b.Wuerfel.Length, anzahlWuerfel);
+            Assert.AreEqual(b.Wuerfels.Length, anzahlWuerfel);
         }
 
         [TestMethod]
@@ -62,13 +62,13 @@ namespace WuerfelspielTests
             // Arrange 
             int anzahlWuerfel = 5;
             Becher b = new Becher(anzahlWuerfel);
-            bool wuerfelIstGeschichert = b.Wuerfel[3].Gesichert;
+            bool wuerfelIstGeschichert = b.Wuerfels[3].Gesichert;
 
             // Act
             b.WuerfelSicherungUmschalten(3);
 
             // Assert
-            Assert.AreNotEqual(b.Wuerfel[3].Gesichert, wuerfelIstGeschichert);
+            Assert.AreNotEqual(b.Wuerfels[3].Gesichert, wuerfelIstGeschichert);
         }
     }
 }

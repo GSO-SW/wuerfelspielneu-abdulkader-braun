@@ -19,7 +19,7 @@ namespace WuerfelspielTests
             //Assert
             Assert.AreEqual(seitenzahl, wuerfel.AnzahlSeiten);
             Assert.IsFalse(wuerfel.Gesichert);
-            Assert.AreEqual(Letztesergebniss, wuerfel.LetztesErgebniss);
+            Assert.AreEqual(Letztesergebniss, wuerfel.Letztesergebniss);
 
         }
 
@@ -31,17 +31,15 @@ namespace WuerfelspielTests
             int Letztesergebniss = 0;
             //Act
             Wuerfel wuerfel = new Wuerfel(seitenzahl);
-            wuerfel.gesichert = true;
+            wuerfel.Gesichert = true;
 
             //Assert
             Assert.AreEqual(seitenzahl, wuerfel.AnzahlSeiten);
             Assert.IsTrue(wuerfel.Gesichert);
-            Assert.AreEqual(Letztesergebniss, wuerfel.LetztesErgebniss);
+            Assert.AreEqual(Letztesergebniss, wuerfel.Letztesergebniss);
 
 
         }
-
-
-
+       
     }
 }
