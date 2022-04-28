@@ -1,13 +1,14 @@
-﻿namespace Wuerfelspiel
+﻿
+namespace Wuerfelspiel
 {
-    partial class Form1
+    partial class Uc_wuerfel
     {
-        /// <summary>
+        /// <summary> 
         /// Erforderliche Designervariable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Verwendete Ressourcen bereinigen.
         /// </summary>
         /// <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
@@ -20,39 +21,28 @@
             base.Dispose(disposing);
         }
 
-        #region Vom Windows Form-Designer generierter Code
+        #region Vom Komponenten-Designer generierter Code
 
-        /// <summary>
-        /// Erforderliche Methode für die Designerunterstützung.
+        /// <summary> 
+        /// Erforderliche Methode für die Designerunterstützung. 
         /// Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
         /// </summary>
         private void InitializeComponent()
         {
-            this.uc_wuerfel1 = new Wuerfelspiel.Uc_wuerfel();
             this.SuspendLayout();
             // 
-            // uc_wuerfel1
-            // 
-            this.uc_wuerfel1.Location = new System.Drawing.Point(12, 12);
-            this.uc_wuerfel1.Name = "uc_wuerfel1";
-            this.uc_wuerfel1.Size = new System.Drawing.Size(150, 150);
-            this.uc_wuerfel1.TabIndex = 0;
-            // 
-            // Form1
+            // Uc_wuerfel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.uc_wuerfel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Uc_wuerfel";
+            this.Load += new System.EventHandler(this.Uc_wuerfel_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Uc_wuerfel_Paint);
+            this.DoubleClick += new System.EventHandler(this.Uc_wuerfel_DoubleClick);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Uc_wuerfel uc_wuerfel1;
     }
 }
-
